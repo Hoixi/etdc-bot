@@ -1,1 +1,2 @@
-# etdc-bot
+# ETDC Discord BOT
+sikişen ses
