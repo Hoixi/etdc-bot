@@ -4,6 +4,12 @@ import os.path
 
 client = discord.Client()
 
+bot = "bot.py"
+dir_path = os.path.dirname(os.path.realpath(__file__))
+bot_path = dir_path + "/" + bot
+restart_on_error = True
+wait_before_restart = 3
+
 
 @client.event
 async def on_ready():
@@ -157,4 +163,4 @@ def get_level(user_id: int):
             return 0
 
 
-client.run(os.environ.get('token'))
+
