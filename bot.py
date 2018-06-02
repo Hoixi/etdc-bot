@@ -76,7 +76,8 @@ async def sarıl(ctx, member:discord.Member) :
    "https://media.giphy.com/media/3bqtLDeiDtwhq/giphy.gif" , 
    "https://78.media.tumblr.com/b4655e26f615a0e2081b9a6c90076539/tumblr_n13pt9SV4p1r45wgho2_500.gif" , 
    "https://media.giphy.com/media/wnsgren9NtITS/giphy.gif" , 
-   "https://i.gifer.com/B7bp.gif"]
+   "https://i.gifer.com/B7bp.gif",
+   "https://cdn.discordapp.com/attachments/357958080224559105/451687910090211338/171021_8687.gif"]
    embed = discord.Embed(title=ctx.message.author.name + " sana sarılıyor " + member.name)
    embed.set_image(url=random.choice(urll))
    await bot.say(embed = embed)
