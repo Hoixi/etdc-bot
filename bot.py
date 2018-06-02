@@ -3,8 +3,7 @@ import random
 from discord.ext.commands import Bot
 from discord.ext import commands
 import os
-import json
-import os.path
+
 
 
 bot = discord.Client()
