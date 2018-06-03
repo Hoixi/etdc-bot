@@ -1,5 +1,6 @@
 import discord
 import random
+from random import *
 from discord.ext.commands import Bot
 from discord.ext import commands
 import os
@@ -113,7 +114,8 @@ async def soyle(ctx):
 
 @bot.command(pass_context=True)
 async def kaçcm(ctx):
-    await bot.say(ctx.message.author.name + "'nin" + random.randint(1,35) + " cm yarrağı var")
+    x = randint(1, 35) 
+    await bot.say(ctx.message.author.name + "'nin " + str(x) + " cm yarrağı var")
 
 
 
