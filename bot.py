@@ -109,7 +109,11 @@ async def soyle(ctx):
     await bot.delete_message(ctx.message)
     await bot.send_message(ctx.message.channel, msg)
     print(ctx.message.author.name, msg)
+    
 
+@bot.command(pass_context=True)
+async def kaçcm(ctx):
+    await bot.say(ctx.message.author.name + "'nin" + random.randint(1,35) + " cm yarrağı var")
 
 
 
