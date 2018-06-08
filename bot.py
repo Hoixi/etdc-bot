@@ -53,6 +53,8 @@ def dnme (usr: int):
             texp = int(exp) + 3
         if level == 5:
             texp = int(exp) + 2
+        if level == 6:
+            texp = int(exp) + 1
 
         if exp >= 148 and level == 0:
             tlvl = int(level) + 1
