@@ -110,10 +110,7 @@ async def soyle(ctx):
     print(ctx.message.author.name, msg)
     
 
-@bot.command(pass_context=True)
-async def kaçcm(ctx):
-    x = random.randint(1, 35) 
-    await bot.say(ctx.message.author.name + "'nin " + str(x) + " cm yarrağı var")
+
 
 
     
