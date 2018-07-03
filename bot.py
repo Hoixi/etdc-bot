@@ -23,7 +23,14 @@ async def on_ready() :
     print(str(len(set(bot.get_all_members()))) + " tane kullanıcaya erişiyor!")
     await bot.change_presence(game=discord.Game(name=str(len(set(bot.get_all_members()))) + " tane kullanıcaya erişiyor!"))
     
-    
+def loll (usr: str):
+    global level
+    global name
+    url = 'https://tr1.api.riotgames.com/lol/summoner/v3/summoners/by-name/'+ usr +'?api_key=' + "os.environ.get('api')"
+    r = urllib.request.urlopen(url)
+    data = json.loads(r.read().decode(r.info().get_param('charset') or 'utf-8'))
+    level = data["summonerLevel"]
+    name = data["name"]
 
 
 @bot.command(pass_context=True)
@@ -113,7 +120,13 @@ async def soyle(ctx):
     
 
 
-
+@bot.command(pass_context=True)
+async def lol(ctx, msg):
+    loll(msg)
+    embed=discord.Embed()
+    embed.set_thumbnail(url="http://avatar.leagueoflegends.com/tr/"+ msg +".png")
+    embed.add_field(name=name, value="Level: " + str(level), inline=False)
+    await bot.say(embed=embed)
 
     
 bot.run(os.environ.get('token'))
