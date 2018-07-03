@@ -4,10 +4,12 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 import os
 import json
+import urllib
+from urllib import request
 
 
-
-
+level = []
+name = []
 bot = discord.Client()
 bot_prefix="e!"
 bot = commands.Bot(command_prefix=bot_prefix)
