@@ -4,7 +4,8 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 import os
 import json
-
+import urllib
+from urllib import request
 
 
 
@@ -110,7 +111,25 @@ async def soyle(ctx):
     print(ctx.message.author.name, msg)
     
 
+level = []
+name = []
+def loll (usr: str):
+    global level
+    global name
+    url = 'https://tr1.api.riotgames.com/lol/summoner/v3/summoners/by-name/'+ usr +'?api_key=os.environ.get('api')'
+    r = urllib.request.urlopen(url)
+    data = json.loads(r.read().decode(r.info().get_param('charset') or 'utf-8'))
+    level = data["summonerLevel"]
+    name = data["name"]
+    
 
+@bot.command(pass_context=True)
+async def lol(ctx, msg):
+    loll(msg)
+    embed=discord.Embed()
+    embed.set_thumbnail(url="http://avatar.leagueoflegends.com/tr/"+ name +".png")
+    embed.add_field(name=name, value="Level: " + str(level), inline=False)
+    await bot.say(embed=embed)
 
 
     
