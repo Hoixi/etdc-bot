@@ -134,6 +134,11 @@ async def kaçcm(ctx):
     x = random.randint(1, 40) 
     await bot.say(ctx.message.author.name + "'nin " + str(x) + " cm yarrağı var")
     
+@bot.command(pass_context=True)
+async def kaçcm(ctx):
+    guild = ctx.guild
+    await guild.create_role(name="role name")
+    
 bot.run(os.environ.get('token'))
 
 
