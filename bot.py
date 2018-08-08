@@ -127,7 +127,12 @@ async def lol(ctx, msg):
     embed.set_thumbnail(url="http://avatar.leagueoflegends.com/tr/"+ msg +".png")
     embed.add_field(name=name, value="Level: " + str(level), inline=False)
     await bot.say(embed=embed)
-
+    
+    
+@bot.command(pass_context=True)
+async def kaçcm(ctx):
+    x = random.randint(1, 40) 
+    await bot.say(ctx.message.author.name + "'nin " + str(x) + " cm yarrağı var")
     
 bot.run(os.environ.get('token'))
 
