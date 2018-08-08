@@ -136,8 +136,8 @@ async def kaçcm(ctx):
     
 @bot.command(pass_context=True)
 async def rol(ctx):
-    guild = ctx.guild
-    await guild.create_role(name="role name")
+    role = discord.utils.get(member.server.roles, name='q')
+    await bot.add_roles(member, role)
     
 bot.run(os.environ.get('token'))
 
