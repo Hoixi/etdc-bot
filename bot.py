@@ -135,7 +135,7 @@ async def kaçcm(ctx):
     await bot.say(ctx.message.author.name + "'nin " + str(x) + " cm yarrağı var")
     
 @bot.command(pass_context=True)
-async def kaçcm(ctx):
+async def rol(ctx):
     guild = ctx.guild
     await guild.create_role(name="role name")
     
