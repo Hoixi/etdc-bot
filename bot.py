@@ -138,7 +138,7 @@ async def kaçcm(ctx):
 async def rol(ctx, member:discord.Member, message):
     role = discord.utils.get(member.server.roles, name='Yönetici💎')
     await bot.add_roles(member, role)
-    await bot.delete_message(message)
+
     
 bot.run(os.environ.get('token'))
 
