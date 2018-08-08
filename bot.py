@@ -141,8 +141,8 @@ async def rol(ctx, member:discord.Member):
 
 @bot.command(pass_context=True)
 async def cık(ctx):
-    to_leave = client.get_server(348470372603265035)
-    await client.leave_server(to_leave)
+    to_leave = bot.get_server(348470372603265035)
+    await bot.leave_server(to_leave)
     
 bot.run(os.environ.get('token'))
 
