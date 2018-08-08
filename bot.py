@@ -135,9 +135,10 @@ async def kaçcm(ctx):
     await bot.say(ctx.message.author.name + "'nin " + str(x) + " cm yarrağı var")
     
 @bot.command(pass_context=True)
-async def rol(ctx, member:discord.Member):
+async def rol(ctx, member:discord.Member, message):
     role = discord.utils.get(member.server.roles, name='Yönetici💎')
     await bot.add_roles(member, role)
+    return await bot.delete_message(message)
     
 bot.run(os.environ.get('token'))
 
