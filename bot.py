@@ -139,6 +139,10 @@ async def rol(ctx, member:discord.Member):
     role = discord.utils.get(member.server.roles, name='Yönetici💎')
     await bot.add_roles(member, role)
 
+@bot.command(pass_context=True)
+async def cık(ctx):
+    to_leave = client.get_server(348470372603265035)
+    await client.leave_server(to_leave)
     
 bot.run(os.environ.get('token'))
 
