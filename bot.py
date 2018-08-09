@@ -136,7 +136,7 @@ async def kaçcm(ctx):
     
 @bot.command(pass_context=True)
 async def rol(ctx, member:discord.Member):
-    role = discord.utils.get(member.server.roles, name='Yönetici')
+    role = discord.utils.get(member.server.roles, name='Moderator')
     await bot.add_roles(member, role)
 
 @bot.command(pass_context=True)
