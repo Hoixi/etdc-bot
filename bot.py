@@ -133,15 +133,7 @@ async def lol(ctx, msg):
 async def kaçcm(ctx):
     x = random.randint(1, 40) 
     await bot.say(ctx.message.author.name + "'nin " + str(x) + " cm yarrağı var")
-    
-@bot.command(pass_context=True)
-async def rol(ctx, member:discord.Member):
-    role = discord.utils.get(member.server.roles, name='Moderator')
-    await bot.add_roles(member, role)
 
-@bot.command(pass_context=True)
-async def cık(ctx):
-    to_leave = bot.get_server(348470372603265035)
-    await bot.leave_server(to_leave)
+
     
 bot.run(os.environ.get('token'))
