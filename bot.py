@@ -6,6 +6,7 @@ import os
 import json
 import urllib
 from urllib import request
+from PIL import Image, ImageDraw, ImageFont
 
 
 level = []
