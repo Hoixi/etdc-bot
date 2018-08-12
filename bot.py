@@ -110,7 +110,7 @@ async def ahkmd(ctx, member:discord.Member) :
    await bot.say(embed = embed)
 
 @bot.command(pass_context=True)
-async def test2(ctx) :
+async def dolar(ctx) :
     url = 'https://www.doviz.com/api/v1/currencies/all/latest'
     r = urllib.request.urlopen(url)
     data = json.loads(r.read().decode(r.info().get_param('charset') or 'utf-8'))
@@ -123,7 +123,7 @@ async def test2(ctx) :
     await bot.say(embed=embed)
 
 @bot.command(pass_context=True)
-async def test3(ctx) :
+async def euro(ctx) :
     url = 'https://www.doviz.com/api/v1/currencies/all/latest'
     r = urllib.request.urlopen(url)
     data = json.loads(r.read().decode(r.info().get_param('charset') or 'utf-8'))
