@@ -8,7 +8,6 @@ import urllib
 from urllib import request
 
 
-
 level = []
 name = []
 bot = discord.Client()
@@ -96,8 +95,6 @@ async def sarıl(ctx, member:discord.Member) :
    embed = discord.Embed(title=ctx.message.author.name + " sana sarılıyor " + member.name)
    embed.set_image(url=random.choice(urll))
    await bot.say(embed = embed)
-    
-
 
 
 @bot.command(pass_context=True)
@@ -142,21 +139,9 @@ async def rol(ctx, member:discord.Member):
     role = discord.utils.get(member.server.roles, name='Moderator')
     await bot.add_roles(member, role)
 
-
-
 @bot.command(pass_context=True)
-async def lol(ctx, msg):
-    loll(msg)
-    embed=discord.Embed()
-    embed.set_thumbnail(url="http://avatar.leagueoflegends.com/tr/"+ msg +".png")
-    embed.add_field(name=name, value="Level: " + str(level), inline=False)
-    await bot.say(embed=embed)
-
-  
-
-
+async def cık(ctx):
+    to_leave = bot.get_server(348470372603265035)
+    await bot.leave_server(to_leave)
     
 bot.run(os.environ.get('token'))
-
-
-
