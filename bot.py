@@ -6,7 +6,7 @@ import os
 import json
 import urllib
 from urllib import request
-from PIL import Image, ImageDraw, ImageFont
+
 
 
 level = []
@@ -140,23 +140,7 @@ async def rol(ctx, member:discord.Member):
     role = discord.utils.get(member.server.roles, name='Moderator')
     await bot.add_roles(member, role)
 
-@bot.command(pass_context=True)
-async longcat(message, match):
-	body_length = min(len(match.group(1)), 20)
-	width = cat_tail.width + body_length * cat_body.width + cat_head.width
-	im = Image.new('RGBA', (width, cat_head.height), 0x00000000)
-	
-	im.paste(cat_tail, (0, 0))
-	x = cat_tail.width
-	for i in range(body_length):
-		im.paste(cat_body, (x, 0))
-		x += cat_body.width
-	im.paste(cat_head, (x, 0))
-	
-	buf = io.BytesIO()
-	im.save(buf, 'png')
-	buf.seek(0)
-	await message.channel.send(file=discord.File(buf, match.group(0) + '.png'))
+
     
 bot.run(os.environ.get('token'))
 
