@@ -1,3 +1,4 @@
+from PIL import Image, ImageDraw, ImageFont
 import discord
 import random
 from discord.ext.commands import Bot
