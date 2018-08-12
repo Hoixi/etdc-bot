@@ -109,7 +109,31 @@ async def ahkmd(ctx, member:discord.Member) :
    embed = discord.Embed(title=ctx.message.author.name + " senin anana hükmediyor " + member.name)
    await bot.say(embed = embed)
 
+@bot.command(pass_context=True)
+async def test2(ctx) :
+    url = 'https://www.doviz.com/api/v1/currencies/all/latest'
+    r = urllib.request.urlopen(url)
+    data = json.loads(r.read().decode(r.info().get_param('charset') or 'utf-8'))
+    alis = data[0]["buying"]
+    satis = data[0]["selling"]
+    embed=discord.Embed(title="Dolar Kuru")
+    embed.set_thumbnail(url="https://webiconspng.com/wp-content/uploads/2017/09/Dollar-PNG-Image-20560.png")
+    embed.add_field(name="Satış", value=satis, inline=True)
+    embed.add_field(name="Alış", value=alis, inline=True)
+    await bot.say(embed=embed)
 
+@bot.command(pass_context=True)
+async def test3(ctx) :
+    url = 'https://www.doviz.com/api/v1/currencies/all/latest'
+    r = urllib.request.urlopen(url)
+    data = json.loads(r.read().decode(r.info().get_param('charset') or 'utf-8'))
+    alis = data[1]["buying"]
+    satis = data[1]["selling"]
+    embed=discord.Embed(title="Euro Kuru")
+    embed.set_thumbnail(url="https://www.ayladt.com/images/farmanager-ayla-euro.png")
+    embed.add_field(name="Satış", value=satis, inline=True)
+    embed.add_field(name="Alış", value=alis, inline=True)
+    await bot.say(embed=embed)
 
 @bot.command(pass_context=True)
 async def soyle(ctx):
