@@ -142,6 +142,43 @@ async def rol(ctx, member:discord.Member):
 
 
 
+@bot.command(pass_context=True)
+async def lol(ctx, msg):
+    loll(msg)
+    embed=discord.Embed()
+    embed.set_thumbnail(url="http://avatar.leagueoflegends.com/tr/"+ msg +".png")
+    embed.add_field(name=name, value="Level: " + str(level), inline=False)
+    await bot.say(embed=embed)
+
+  
+
+@bot.command(pass_context=True)
+async def dolar(ctx) :
+    url = 'https://www.doviz.com/api/v1/currencies/all/latest'
+    r = urllib.request.urlopen(url)
+    data = json.loads(r.read().decode(r.info().get_param('charset') or 'utf-8'))
+    alis = data[0]["buying"]
+    satis = data[0]["selling"]
+
+    embed=discord.Embed(title="Dolar Kuru")
+    embed.set_thumbnail(url="https://webiconspng.com/wp-content/uploads/2017/09/Dollar-PNG-Image-20560.png")
+    embed.add_field(name="Satış", value=satis, inline=True)
+    embed.add_field(name="Alış", value=alis, inline=True)
+    await bot.say(embed=embed)
+
+@bot.command(pass_context=True)
+async def euro(ctx) :
+    url = 'https://www.doviz.com/api/v1/currencies/all/latest'
+    r = urllib.request.urlopen(url)
+    data = json.loads(r.read().decode(r.info().get_param('charset') or 'utf-8'))
+    alis = data[1]["buying"]
+    satis = data[1]["selling"]
+
+    embed=discord.Embed(title="Euro Kuru")
+    embed.set_thumbnail(url="https://www.ayladt.com/images/farmanager-ayla-euro.png")
+    embed.add_field(name="Satış", value=satis, inline=True)
+    embed.add_field(name="Alış", value=alis, inline=True)
+    await bot.say(embed=embed)
     
 bot.run(os.environ.get('token'))
 
