@@ -159,7 +159,6 @@ async def dolar(ctx) :
     data = json.loads(r.read().decode(r.info().get_param('charset') or 'utf-8'))
     alis = data[0]["buying"]
     satis = data[0]["selling"]
-
     embed=discord.Embed(title="Dolar Kuru")
     embed.set_thumbnail(url="https://webiconspng.com/wp-content/uploads/2017/09/Dollar-PNG-Image-20560.png")
     embed.add_field(name="Satış", value=satis, inline=True)
@@ -173,7 +172,6 @@ async def euro(ctx) :
     data = json.loads(r.read().decode(r.info().get_param('charset') or 'utf-8'))
     alis = data[1]["buying"]
     satis = data[1]["selling"]
-
     embed=discord.Embed(title="Euro Kuru")
     embed.set_thumbnail(url="https://www.ayladt.com/images/farmanager-ayla-euro.png")
     embed.add_field(name="Satış", value=satis, inline=True)
