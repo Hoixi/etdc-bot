@@ -135,6 +135,21 @@ async def euro(ctx) :
     embed.add_field(name="Alış", value=alis, inline=True)
     await bot.say(embed=embed)
 
+    
+@bot.command(pass_context=True)
+async def sterlin(ctx) :
+    url = 'https://www.doviz.com/api/v1/currencies/all/latest'
+    r = urllib.request.urlopen(url)
+    data = json.loads(r.read().decode(r.info().get_param('charset') or 'utf-8'))
+    alis = data[2]["buying"]
+    satis = data[2]["selling"]
+    embed=discord.Embed(title="Sterlin Kuru")
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb3fo1Fn49kid84H3bFqIwuQSzGR38WiwSTztMSaT4LAVjskgtnQ")
+    embed.add_field(name="Satış", value=satis, inline=True)
+    embed.add_field(name="Alış", value=alis, inline=True)
+    await bot.say(embed=embed)
+    
+
 @bot.command(pass_context=True)
 async def soyle(ctx):
     msg = ctx.message.content.split("1")
