@@ -1,4 +1,3 @@
-from PIL import Image, ImageDraw, ImageFont
 import discord
 import random
 from discord.ext.commands import Bot
@@ -141,16 +140,7 @@ async def rol(ctx, member:discord.Member):
     role = discord.utils.get(member.server.roles, name='Moderator')
     await bot.add_roles(member, role)
 
-@bot.command(pass_context=True)
-async def test(ctx) :
-    x = random.randint(1, 40) 
-    mesaj = (ctx.message.author.name + "'nin " + str(x) + " cm yarrağı var")
-    img = Image.new('RGB', (500, 100), color = (73, 109, 137))   
-    d = ImageDraw.Draw(img)
-    name = ctx.message.author.name + " adli kisinin "+  str(x) + " yarragi var"
-    d.text((250,50), (name)  , fill=(255, 255, 0))     
-    img.save(ctx.message.author.name + '.png')
-    await bot.send_file(ctx.message.channel, ctx.message.author.name + '.png')
+
 
     
 bot.run(os.environ.get('token'))
