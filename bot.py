@@ -81,7 +81,8 @@ async def sakso(ctx, member:discord.Member) :
    "http://68.media.tumblr.com/6f5df52d809ed9c7bd8d1f4c54d6829d/tumblr_njxjq6L4WV1u7ylgco1_400.gif" , 
    "https://78.media.tumblr.com/tumblr_m8z2uawCvV1rdw7hvo1_500.gif" , 
    "https://78.media.tumblr.com/07846221248f42eb6078b8188c25b419/tumblr_obi83jv6pa1vzttmyo1_500.gif" , 
-   "https://static.hentai-gifs.com/upload/20160506/14/27001/1.gif"]
+   "https://static.hentai-gifs.com/upload/20160506/14/27001/1.gif" , 
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/hentai-gif.gif"]
    embed = discord.Embed(title=ctx.message.author.name + " sana sakso çektiriyor " + member.name)
    embed.set_image(url=random.choice(urll))
    await bot.say(embed = embed)
