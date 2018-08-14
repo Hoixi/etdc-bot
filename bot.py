@@ -65,8 +65,24 @@ async def sik(ctx, member:discord.Member) :
    "https://78.media.tumblr.com/916f8497317b49edb5802fa6aa411f47/tumblr_o5492gX7Ir1ugdh13o1_500.gif" ,
    "https://78.media.tumblr.com/de046b1380f663bf05d4833de2ec8078/tumblr_o54939bHby1ugdh13o1_500.gif" ,
    "https://78.media.tumblr.com/9cdba610e7f393539718c12a010c12c1/tumblr_o5493vuIAk1ugdh13o1_500.gif" ,
-   "https://78.media.tumblr.com/5a030c57050ce1bcaa4c5efc116ad27a/tumblr_o5496dmxSS1ugdh13o1_500.gif" ,]
+   "https://78.media.tumblr.com/5a030c57050ce1bcaa4c5efc116ad27a/tumblr_o5496dmxSS1ugdh13o1_500.gif" ,
+   "https://static.hentai-gifs.com/upload/20160530/18/36676/1.gif", 
+   "https://78.media.tumblr.com/bd1af323390c9dc5362a56a5ada27a3a/tumblr_p25vpc5DGO1vkkt9ro1_1280.gif" , 
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/gif-hentai.gif" , 
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/gifs-hentai.gif"]
    embed = discord.Embed(title=ctx.message.author.name + " seni sikiyor " + member.name)
+   embed.set_image(url=random.choice(urll))
+   await bot.say(embed = embed)
+    
+@bot.command(pass_context=True)
+async def sakso(ctx, member:discord.Member) :
+   urll = ["https://78.media.tumblr.com/95a43cfe1124675948ee753941fe169e/tumblr_o8ufjuFpqI1urpdgno1_540.gif" , 
+   "https://78.media.tumblr.com/c20426f84eda26c74e55c737b9257440/tumblr_omav14cUad1vkkt9ro2_500.gif" , 
+   "http://68.media.tumblr.com/6f5df52d809ed9c7bd8d1f4c54d6829d/tumblr_njxjq6L4WV1u7ylgco1_400.gif" , 
+   "https://78.media.tumblr.com/tumblr_m8z2uawCvV1rdw7hvo1_500.gif" , 
+   "https://78.media.tumblr.com/07846221248f42eb6078b8188c25b419/tumblr_obi83jv6pa1vzttmyo1_500.gif" , 
+   "https://static.hentai-gifs.com/upload/20160506/14/27001/1.gif"]
+   embed = discord.Embed(title=ctx.message.author.name + " sana sakso çektiriyor " + member.name)
    embed.set_image(url=random.choice(urll))
    await bot.say(embed = embed)
 
