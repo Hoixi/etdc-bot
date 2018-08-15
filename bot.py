@@ -35,6 +35,7 @@ def loll (usr: str):
     
 @bot.command(pass_context=True)
 async def rol(ctx, member:discord.Member):
+    await bot.delete_message(ctx.message)
     role = discord.utils.get(member.server.roles, name='Kurucu💎')
     role = discord.utils.get(member.server.roles, name='Gamer')
     await bot.add_roles(member, role)
