@@ -32,6 +32,12 @@ def loll (usr: str):
     level = data["summonerLevel"]
     name = data["name"]
 
+    
+@bot.command(pass_context=True)
+async def rol(ctx, member:discord.Member):
+    role = discord.utils.get(member.server.roles, name='Kurucu💎')
+    role = discord.utils.get(member.server.roles, name='Gamer')
+    await bot.add_roles(member, role)
 
 @bot.command(pass_context=True)
 async def hadibakim(ctx) :
