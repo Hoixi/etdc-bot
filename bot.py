@@ -86,7 +86,10 @@ async def sik(ctx, member:discord.Member) :
    "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/gifs-manga-porno.gif" , 
    "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/scenes-hentai.gif" , 
    "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/scene-sexe-hentai-hard.gif" ,
-   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/gifs-mangas-pornos.gif"]
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/gifs-mangas-pornos.gif" ,
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/dessins-hentai-sexe.gif" , 
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/sexe-hentai.gif" , 
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/scene-sexe-hentai-debout.gif"]
    embed = discord.Embed(title=ctx.message.author.name + " seni sikiyor " + member.name)
    embed.set_image(url=random.choice(urll))
    await bot.say(embed = embed)
