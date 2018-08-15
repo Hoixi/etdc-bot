@@ -89,7 +89,27 @@ async def sik(ctx, member:discord.Member) :
    "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/gifs-mangas-pornos.gif" ,
    "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/dessins-hentai-sexe.gif" , 
    "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/sexe-hentai.gif" , 
-   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/scene-sexe-hentai-debout.gif"]
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/scene-sexe-hentai-debout.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/hentai-plaisir.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/hentai-levrette-2.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/mangas-pornos-sexe.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/animation-mangas-pornos.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/manga-sexe-porno.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/gif-hentai-plaisir.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/animation-hentai-sodomie.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/mangas-pornos-animes.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/hentai-sexe-trio.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/gif-hentai-penetration.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/gif-anime-sexe-hentai.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/hentai-gifs-sexe.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/gifs-sexe-hentai.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/gif-sexe-manga-porno.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/scene-chaude-hentai.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/fellation-gif-hentai.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/animation-hentai-1.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/plaisirs-sexuels-hentai.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/animation-sodomie-hentai.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/sexe-hentai-gif.gif"]
    embed = discord.Embed(title=ctx.message.author.name + " seni sikiyor " + member.name)
    embed.set_image(url=random.choice(urll))
    await bot.say(embed = embed)
@@ -102,7 +122,12 @@ async def sakso(ctx, member:discord.Member) :
    "https://78.media.tumblr.com/tumblr_m8z2uawCvV1rdw7hvo1_500.gif" , 
    "https://78.media.tumblr.com/07846221248f42eb6078b8188c25b419/tumblr_obi83jv6pa1vzttmyo1_500.gif" , 
    "https://static.hentai-gifs.com/upload/20160506/14/27001/1.gif" , 
-   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/hentai-gif.gif"]
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/hentai-gif.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/hentai-fellation.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/gif-hentai-fellation.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/gif-hentai-ejaculation.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/animations-hentai-fellation.gif",
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/fellation-hentai.gif"]
    embed = discord.Embed(title=ctx.message.author.name + " sana sakso çektiriyor " + member.name)
    embed.set_image(url=random.choice(urll))
    await bot.say(embed = embed)
