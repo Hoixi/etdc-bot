@@ -189,7 +189,7 @@ async def manat(ctx) :
     await bot.say(embed=embed)
 
 @bot.command(pass_context=True)
-async def soyle(ctx, content) :
+async def soyle(ctx, *,content) :
     await bot.delete_message(ctx.message)
     await bot.say(content)
 
