@@ -38,6 +38,10 @@ async def hadibakim(ctx) :
     await bot.say("Birileri demiş öldü şimdi yazsınlar KRAL geri döndü!")
 
 @bot.command(pass_context=True)
+async def dev(ctx) :
+    await bot.say("Beni geliştiren anan")
+    
+@bot.command(pass_context=True)
 async def öp(ctx, member:discord.Member) :
    urll = ["http://24.media.tumblr.com/tumblr_m8yxnswMgE1rc0fd6o1_r5_500.gif" , 
    "https://pa1.narvii.com/5823/a1ff3fbec588fdde66dd24293f2220233ce42076_hq.gif" , 
@@ -190,7 +194,8 @@ async def soyle(ctx):
     await bot.delete_message(ctx.message)
     await bot.send_message(ctx.message.channel, msg)
     print(ctx.message.author.name, msg)
-    
+
+
 
 
 @bot.command(pass_context=True)
