@@ -32,30 +32,30 @@ def loll (usr: str):
     level = data["summonerLevel"]
     name = data["name"]
     
-@client.event
+@bot.event
 async def on_message(message):
     if message.content.startswith('sa'):
-        await client.send_message(message.channel, 'as')
+        await bot.send_message(message.channel, 'as')
   
-@client.event
+@bot.event
 async def on_message(message):
     if message.content.startswith('selam'):
-        await client.send_message(message.channel, 'selam güzel kardeşim')
+        await bot.send_message(message.channel, 'selam güzel kardeşim')
         
-@client.event
+@bot.event
 async def on_message(message):
     if message.content.startswith('naber'):
-        await client.send_message(message.channel, 'sanane')
+        await bot.send_message(message.channel, 'sanane')
         
-@client.event
+@bot.event
 async def on_message(message):
     if message.content.startswith('slm'):
-        await client.send_message(message.channel, 'slm cnm krdşm')
+        await bot.send_message(message.channel, 'slm cnm krdşm')
 
-@client.event
+@bot.event
 async def on_message(message):
     if message.content.startswith('selamın aleyküm'):
-        await client.send_message(message.channel, 'aleyküm selam')
+        await bot.send_message(message.channel, 'aleyküm selam')
     
 @bot.command(pass_context=True)
 async def rol(ctx, member:discord.Member):
