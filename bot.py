@@ -32,20 +32,7 @@ def loll (usr: str):
     level = data["summonerLevel"]
     name = data["name"]
     
-@bot.event
-async def on_message(message):
-    if message.content.lower().startswith('sa'):
-        await bot.send_message(message.channel, "as")
-    if message.content.lower().startswith('selamın aleyküm'):
-        await bot.send_message(message.channel, "aleyküm selam")
-    if message.content.lower().startswith('selam'):
-        await bot.send_message(message.channel, "selam güzel kardeşim")
-    if message.content.lower().startswith('naber'):
-        await bot.send_message(message.channel, "sanane")
-    if message.content.lower().startswith('slm'):
-        await bot.send_message(message.channel, "slm cnm krdşm")
-    if message.content.lower().startswith('nbr'):
-        await bot.send_message(message.channel, "snne")
+
     
 @bot.command(pass_context=True)
 async def rol(ctx, member:discord.Member):
