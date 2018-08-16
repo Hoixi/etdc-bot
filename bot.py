@@ -35,17 +35,17 @@ def loll (usr: str):
 @client.event
 async def on_message(message):
     if message.content.lower().startswith('sa'):
-        await client.send_message(message.channel, "as")
+        await bot.send_message(message.channel, "as")
     if message.content.lower().startswith('selamın aleyküm'):
-        await client.send_message(message.channel, "aleyküm selam")
+        await bot.send_message(message.channel, "aleyküm selam")
     if message.content.lower().startswith('selam'):
-        await client.send_message(message.channel, "selam güzel kardeşim")
+        await bot.send_message(message.channel, "selam güzel kardeşim")
     if message.content.lower().startswith('naber'):
-        await client.send_message(message.channel, "sanane")
+        await bot.send_message(message.channel, "sanane")
     if message.content.lower().startswith('slm'):
-        await client.send_message(message.channel, "slm cnm krdşm")
+        await bot.send_message(message.channel, "slm cnm krdşm")
     if message.content.lower().startswith('nbr'):
-        await client.send_message(message.channel, "snne")
+        await bot.send_message(message.channel, "snne")
     
 @bot.command(pass_context=True)
 async def rol(ctx, member:discord.Member):
