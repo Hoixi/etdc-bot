@@ -402,7 +402,8 @@ async def waifu(ctx) :
     kitap = ["Fantezi kitapları okumayı," , "Tarihsel kurgu okumayı," , "Korku kitapları okumayı," , "Gizem kitapları okumayı," , "Romantizm kitapları okumayı," , "Manga okumayı," , "Çizgi roman okumayı,"]
     film = [" fantezi filmleri izlemeyi," , " tarihi filmler izlemeyi," , " korku filmleri izlemeyi" , " gizem filmleri izlemeyi," , " romantizm filmleri izlemeyi," , " anime izlemeyi," , " çizgi film izlemeyi,"]
     sarki = [" ve J-POP dinlemeyi" , " ve klasik müzik dinlemeyi" , " ve metal dinlemeyi" , " ve death metal dinlemeyi" , " ve rap dinlemeyi" , " ve pop dinlemeyi" , " ve yöresel müzik dinlemeyi"]
-    waifu = "Bu " + random.choice(pers) + " " + random.choice(age) + " yaşında ki kız, " + random.choice(goz) + " renkli gözlere ve " + random.choice(sactipi) +" " +random.choice(sacrengi) +  " renginde " + random.choice(sacstil) + " saçlara sahip. O " + random.choice(agırlık) + ", " + random.choice(boy) + " ve " + random.choice(giyim) + "." + random.choice(kitap) + random.choice(film) + random.choice(sarki) + " seviyor."
+    meme = ["çok küçük" , "biraz küçük" , "küçük" , "ortalama" , "biraz büyük" , "büyük" , "çok büyük"]
+    waifu = "Bu " + random.choice(pers) + " " + random.choice(age) + " yaşında ki kız, " + random.choice(goz) + " renkli gözlere ve " + random.choice(sactipi) +" " +random.choice(sacrengi) +  " renginde " + random.choice(sacstil) + " saçlara sahip. O " + random.choice(agırlık) + ", " + random.choice(boy) + " ve " + random.choice(giyim) + "." + random.choice(kitap) + random.choice(film) + random.choice(sarki) + " seviyor ve " + random.choice(meme) + " göğüslere sahip"
 
     await bot.say(waifu)
    
