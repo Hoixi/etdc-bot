@@ -317,7 +317,7 @@ async def waifu(ctx) :
 "kayrak mavi",
 "turkuaz"
 ]
-    sacstil = ["düzgünce örgülü" , "kısa kesilmiş" , "sol tarafı kesilmemiş" , "düzgünce sabitlenmiş" , "uzun örülmüş" , "kısa örülmüş" , "orta uzunlukta örülmüş " , "uzun at kuyruğu" , "orta uzunlukta at kuyruğu" , "kısa at at kuyruğu" , "salınık uzun saçlara" , "salınık kısa saçlara"]
+    sacstil = ["düzgünce örgülü" , "kısa kesilmiş" , "sol tarafı kesilmemiş" , "düzgünce sabitlenmiş" , "uzun örülmüş" , "kısa örülmüş" , "orta uzunlukta örülmüş " , "uzun at kuyruğu" , "orta uzunlukta at kuyruğu" , "kısa at at kuyruğu" , "salınık uzun" , "salınık kısa"]
     sactipi = ["düz" , "dalgalı" , "kıvırcık"]
     sacrengi = [ "kumral",
 "siyah",
@@ -397,7 +397,7 @@ async def waifu(ctx) :
 "kayrak mavi",
 "turkuaz"]
     giyim = ["genelde mütevazı elbiseler giyer" , "çok siyah giyinir" , "çok renkli giyinir" , "eski moda kıyafetler giymeyi sever" , "çirkin kıyafetleri giymeyi sever" , "oldukça muhafazakar elbiseler giyer"]
-    boy = ["ortalama bir boya sahip" , "uzun boylu" , "biraz uzun boylu" , "çok uzun boylu" , "kısa boylu" , "biraz kısa boyly" , "çok kısa boylu"]
+    boy = ["ortalama bir boya sahip" , "uzun boylu" , "biraz uzun boylu" , "çok uzun boylu" , "kısa boylu" , "biraz kısa boylu" , "çok kısa boylu"]
     agırlık = ["oldukça ince" , "biraz zayıf" , "ortalama bir ağırlıkta" , "biraz tombul" , "oldukça tombul" , "oldukça kaslı" , "bayağı kaslı"]
     waifu = "Bu " + random.choice(pers) + " " + random.choice(age) + " yaşında ki kız, " + random.choice(goz) + " renkli gözlere ve " + random.choice(sactipi) +" " +random.choice(sacrengi) +  " renginde " + random.choice(sacstil) + " saçlara sahip. O " + random.choice(agırlık) + " ve " + random.choice(boy) + ". O " + random.choice(giyim)
 
