@@ -399,7 +399,10 @@ async def waifu(ctx) :
     giyim = ["genelde mütevazı elbiseler giyer" , "çok siyah giyinir" , "çok renkli giyinir" , "eski moda kıyafetler giymeyi sever" , "çirkin kıyafetleri giymeyi sever" , "oldukça muhafazakar elbiseler giyer"]
     boy = ["ortalama bir boya sahip" , "uzun boylu" , "biraz uzun boylu" , "çok uzun boylu" , "kısa boylu" , "biraz kısa boylu" , "çok kısa boylu"]
     agırlık = ["oldukça ince" , "biraz zayıf" , "ortalama bir ağırlıkta" , "biraz tombul" , "oldukça tombul" , "oldukça kaslı" , "bayağı kaslı"]
-    waifu = "Bu " + random.choice(pers) + " " + random.choice(age) + " yaşında ki kız, " + random.choice(goz) + " renkli gözlere ve " + random.choice(sactipi) +" " +random.choice(sacrengi) +  " renginde " + random.choice(sacstil) + " saçlara sahip. O " + random.choice(agırlık) + " ve " + random.choice(boy) + ". O " + random.choice(giyim)
+    kitap = ["Fantezi kitapları okumayı," , "Tarihsel kurgu okumayı," , "Korku kitapları okumayı," , "Gizem kitapları okumayı," , "Romantizm kitapları okumayı," , "Manga okumayı," , "Çizgi roman okumayı,"]
+    film = [" fantezi filmleri izlemeyi," , " tarihi filmler izlemeyi," , " korku filmleri izlemeyi" , " gizem filmleri izlemeyi," , " romantizm filmleri izlemeyi," , " anime izlemeyi," , " çizgi film izlemeyi,"]
+    sarki = [" ve J-POP dinlemeyi" , " ve klasik müzik dinlemeyi" , " ve metal dinlemeyi" , " ve death metal dinlemeyi" , " ve rap dinlemeyi" , " ve pop dinlemeyi" , " ve yöresel müzik dinlemeyi"]
+    waifu = "Bu " + random.choice(pers) + " " + random.choice(age) + " yaşında ki kız, " + random.choice(goz) + " renkli gözlere ve " + random.choice(sactipi) +" " +random.choice(sacrengi) +  " renginde " + random.choice(sacstil) + " saçlara sahip. O " + random.choice(agırlık) + ", " + random.choice(boy) + " ve " + random.choice(giyim) + "." + random.choice(kitap) + random.choice(film) + random.choice(sarki) + " seviyor."
 
     await bot.say(waifu)
    
@@ -554,7 +557,10 @@ async def husband(ctx) :
     giyim = ["genelde mütevazı elbiseler giyer" , "çok siyah giyinir" , "çok renkli giyinir" , "eski moda kıyafetler giymeyi sever" , "çirkin kıyafetleri giymeyi sever" , "oldukça muhafazakar elbiseler giyer"]
     boy = ["ortalama bir boya sahip" , "uzun boylu" , "biraz uzun boylu" , "çok uzun boylu" , "kısa boylu" , "biraz kısa boyly" , "çok kısa boylu"]
     agırlık = ["oldukça ince" , "biraz zayıf" , "ortalama bir ağırlıkta" , "biraz tombul" , "oldukça tombul" , "oldukça kaslı" , "bayağı kaslı"]
-    waifu = "Bu " + random.choice(pers) + " " + random.choice(age) + " yaşında ki erkek, " + random.choice(goz) + " renkli gözlere ve " + random.choice(sactipi) +" " +random.choice(sacrengi) +  " renginde " + random.choice(sacstil) + " saçlara sahip. O " + random.choice(agırlık) + " ve " + random.choice(boy) + ". O " + random.choice(giyim)
+    kitap = ["Fantezi kitapları okumayı," , "Tarihsel kurgu okumayı," , "Korku kitapları okumayı," , "Gizem kitapları okumayı," , "Romantizm kitapları okumayı," , "Manga okumayı," , "Çizgi roman okumayı,"]
+    film = [" fantezi filmleri izlemeyi," , " tarihi filmler izlemeyi," , " korku filmleri izlemeyi" , " gizem filmleri izlemeyi," , " romantizm filmleri izlemeyi," , " anime izlemeyi," , " çizgi film izlemeyi,"]
+    sarki = [" ve J-POP dinlemeyi" , " ve klasik müzik dinlemeyi" , " ve metal dinlemeyi" , " ve death metal dinlemeyi" , " ve rap dinlemeyi" , " ve pop dinlemeyi" , " ve yöresel müzik dinlemeyi"]
+    waifu = "Bu " + random.choice(pers) + " " + random.choice(age) + " yaşında ki erkek, " + random.choice(goz) + " renkli gözlere ve " + random.choice(sactipi) +" " +random.choice(sacrengi) +  " renginde " + random.choice(sacstil) + " saçlara sahip. O " + random.choice(agırlık) + ", " + random.choice(boy) + " ve " + random.choice(giyim) + "." + random.choice(kitap) + random.choice(film) + random.choice(sarki) + " seviyor."
 
     await bot.say(waifu)
     
