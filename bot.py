@@ -32,7 +32,7 @@ def loll (usr: str):
     level = data["summonerLevel"]
     name = data["name"]
     
-@client.event
+@bot.event
 async def on_message(message):
     if message.content.lower().startswith('sa'):
         await bot.send_message(message.channel, "as")
