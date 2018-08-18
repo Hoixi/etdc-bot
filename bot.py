@@ -147,7 +147,7 @@ async def sakso(ctx, member:discord.Member) :
    "https://blog-imgs-75.fc2.com/m/o/m/momoerogazo/20150507135022844.gif"]
    if member.name == "ETDC" :
        await bot.say("Yakışmıyor sana " + ctx.message.author.name)
-    else :
+   else :
        embed = discord.Embed(title=ctx.message.author.name + " sana sakso çektiriyor " + member.name)
        embed.set_image(url=random.choice(urll))
        await bot.say(embed = embed)
