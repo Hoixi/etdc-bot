@@ -59,7 +59,7 @@ async def öp(ctx, member:discord.Member) :
    "https://media1.giphy.com/media/G3va31oEEnIkM/giphy.gif" , 
    "https://media.giphy.com/media/FqBTvSNjNzeZG/giphy.gif" , 
    "https://media0.giphy.com/media/bGm9FuBCGg4SY/200.gif" , 
-          "https://cdn.discordapp.com/attachments/477066430391779369/479234380200411156/1498492571_tumblr_mmnhw59Lh81spgltio1_500.gif"]
+   "https://cdn.discordapp.com/attachments/477066430391779369/479234380200411156/1498492571_tumblr_mmnhw59Lh81spgltio1_500.gif"]
    embed = discord.Embed(title=ctx.message.author.name + " seni öpüyor " + member.name)
    embed.set_image(url=random.choice(urll))
    await bot.say(embed = embed)
