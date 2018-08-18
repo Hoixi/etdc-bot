@@ -120,9 +120,12 @@ async def sik(ctx, member:discord.Member) :
    "https://78.media.tumblr.com/192e5b0335c16503e30d5fb2dfa18062/tumblr_omav74dggm1vkkt9ro3_1280.gif",
    "https://images.sex.com/images/pinporn/2015/09/23/620/13859134.gif",
    "https://i.imgur.com/rtmGBTC.gif"]
-   embed = discord.Embed(title=ctx.message.author.name + " seni sikiyor " + member.name)
-   embed.set_image(url=random.choice(urll))
-   await bot.say(embed = embed)
+   if member.name == "ETDC" :
+       await bot.say("Yakışmıyor sana " + ctx.message.author.name)
+   else :
+       embed = discord.Embed(title=ctx.message.author.name + " seni sikiyor " + member.name)
+       embed.set_image(url=random.choice(urll))
+       await bot.say(embed = embed)
     
 @bot.command(pass_context=True)
 async def sakso(ctx, member:discord.Member) :
@@ -142,9 +145,12 @@ async def sakso(ctx, member:discord.Member) :
    "https://blog-imgs-75.fc2.com/m/o/m/momoerogazo/20150507135023e43.gif",
    "https://blog-imgs-75.fc2.com/m/o/m/momoerogazo/20150507134929e01.gif",
    "https://blog-imgs-75.fc2.com/m/o/m/momoerogazo/20150507135022844.gif"]
-   embed = discord.Embed(title=ctx.message.author.name + " sana sakso çektiriyor " + member.name)
-   embed.set_image(url=random.choice(urll))
-   await bot.say(embed = embed)
+   if member.name == "ETDC" :
+       await bot.say("Yakışmıyor sana " + ctx.message.author.name)
+    else :
+       embed = discord.Embed(title=ctx.message.author.name + " sana sakso çektiriyor " + member.name)
+       embed.set_image(url=random.choice(urll))
+       await bot.say(embed = embed)
 
 @bot.command(pass_context=True)
 async def sev(ctx, member:discord.Member) :
