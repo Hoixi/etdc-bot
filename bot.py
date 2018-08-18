@@ -114,7 +114,12 @@ async def sik(ctx, member:discord.Member) :
    "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/hentai-animation.gif",
    "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/sexe-debout-gif-hentai.gif",
    "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/gif-sexe-hentai-1.gif",
-   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/hentai-plaisir-solo.gif"]
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/hentai-plaisir-solo.gif",
+   "https://78.media.tumblr.com/49c0d8d34278a6cd1cfe7030e3eee16a/tumblr_p25vnrzC4R1vkkt9ro1_500.gif",
+   "https://78.media.tumblr.com/a39ae50d2ba1ee6441a2d038e37c3732/tumblr_p25vjpiFyU1vkkt9ro1_500.gif",
+   "https://78.media.tumblr.com/192e5b0335c16503e30d5fb2dfa18062/tumblr_omav74dggm1vkkt9ro3_1280.gif",
+   "https://images.sex.com/images/pinporn/2015/09/23/620/13859134.gif",
+   "https://i.imgur.com/rtmGBTC.gif"]
    embed = discord.Embed(title=ctx.message.author.name + " seni sikiyor " + member.name)
    embed.set_image(url=random.choice(urll))
    await bot.say(embed = embed)
@@ -132,7 +137,11 @@ async def sakso(ctx, member:discord.Member) :
    "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/gif-hentai-fellation.gif",
    "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/gif-hentai-ejaculation.gif",
    "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/animations-hentai-fellation.gif",
-   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/fellation-hentai.gif"]
+   "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/fellation-hentai.gif",
+   "https://78.media.tumblr.com/1ef63694b150c358c696552e6d0caa6a/tumblr_inline_oy14bahpdh1tl26vf_400.gif",
+   "https://blog-imgs-75.fc2.com/m/o/m/momoerogazo/20150507135023e43.gif",
+   "https://blog-imgs-75.fc2.com/m/o/m/momoerogazo/20150507134929e01.gif",
+   "https://blog-imgs-75.fc2.com/m/o/m/momoerogazo/20150507135022844.gif"]
    embed = discord.Embed(title=ctx.message.author.name + " sana sakso çektiriyor " + member.name)
    embed.set_image(url=random.choice(urll))
    await bot.say(embed = embed)
