@@ -181,8 +181,8 @@ async def sarıl(ctx, member:discord.Member) :
 
 @bot.command(pass_context=True)
 async def developer(ctx, member:discord.Member) :
-   urll = ["https://media1.tenor.com/images/73a746bada06751716d3173fbb9e6864/tenor.gif"]
-   embed = discord.Embed(title=ctx.message.author.name + " seni seviyor " + member.name)
+   urll = ["https://78.media.tumblr.com/adb7cfd4d269f1c0283e77d1582b0947/tumblr_nao8ylngNE1qii0lzo1_500.gif"]
+   embed = discord.Embed(title="Developer Hoixi#6514")
    embed.set_image(url=random.choice(urll))
    await bot.say(embed = embed)
 
