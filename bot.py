@@ -59,7 +59,32 @@ async def öp(ctx, member:discord.Member) :
    "https://media1.giphy.com/media/G3va31oEEnIkM/giphy.gif" , 
    "https://media.giphy.com/media/FqBTvSNjNzeZG/giphy.gif" , 
    "https://media0.giphy.com/media/bGm9FuBCGg4SY/200.gif" , 
-   "https://cdn.discordapp.com/attachments/477066430391779369/479234380200411156/1498492571_tumblr_mmnhw59Lh81spgltio1_500.gif"]
+   "https://cdn.discordapp.com/attachments/477066430391779369/479234380200411156/1498492571_tumblr_mmnhw59Lh81spgltio1_500.gif",
+   "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-26.gif",
+   "http://gifimage.net/wp-content/uploads/2017/09/anime-forehead-kiss-gif-5.gif",
+   "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-13.gif",
+   "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-14.gif",
+   "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-15.gif",
+   "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-16.gif",
+   "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-17.gif",
+   "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-18.gif",
+          "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-19.gif",
+          "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-20.gif",
+          "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-21.gif",
+          "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-22.gif",
+          "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-23.gif",
+          "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-24.gif",
+          "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-25.gif",
+          "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-26.gif",
+          "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-27.gif",
+          "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-28.gif",
+          "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-29.gif",
+          "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-30.gif",
+          "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-31.gif",
+          "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-32.gif",
+          "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-33.gif",
+          "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-34.gif",
+          "https://lifeo.ru/wp-content/uploads/gif-anime-kisses-35.gif",]
    embed = discord.Embed(title=ctx.message.author.name + " seni öpüyor " + member.name)
    embed.set_image(url=random.choice(urll))
    await bot.say(embed = embed)
@@ -173,7 +198,13 @@ async def sarıl(ctx, member:discord.Member) :
    "https://78.media.tumblr.com/b4655e26f615a0e2081b9a6c90076539/tumblr_n13pt9SV4p1r45wgho2_500.gif" , 
    "https://media.giphy.com/media/wnsgren9NtITS/giphy.gif" , 
    "https://i.gifer.com/B7bp.gif",
-   "https://cdn.discordapp.com/attachments/357958080224559105/451687910090211338/171021_8687.gif"]
+   "https://cdn.discordapp.com/attachments/357958080224559105/451687910090211338/171021_8687.gif",
+   "https://media1.tenor.com/images/234d471b1068bc25d435c607224454c9/tenor.gif",
+   "https://thumbs.gfycat.com/AlienatedUnawareArcherfish-size_restricted.gif",
+   "https://data.whicdn.com/images/274281308/original.gif",
+   "https://thumbs.gfycat.com/BlindOblongAmurratsnake-size_restricted.gif",
+   "https://media1.giphy.com/media/pXQhWw2oHoPIs/giphy-downsized-large.gif",
+   "https://data.whicdn.com/images/203117396/original.gif"]
    embed = discord.Embed(title=ctx.message.author.name + " sana sarılıyor " + member.name)
    embed.set_image(url=random.choice(urll))
    await bot.say(embed = embed)
