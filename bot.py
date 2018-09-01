@@ -45,13 +45,6 @@ async def rol(ctx, member:discord.Member):
 async def hadibakim(ctx) :
     await bot.say("Birileri demiş öldü şimdi yazsınlar KRAL geri döndü!")
 
-@bot.command(pass_context=True)
-async def dev(ctx) :
-    await bot.say("Beni geliştiren anan")
-    
-@bot.command(pass_context=True)
-async def help(ctx) :
-    await bot.say("``#Duygular \n Öp = etiketlediğiniz kişiyi öper \n Sev = etiketlediğiniz kişiyi sever \n Sarıl = etiketlediğiniz kişiye sarılır \n Sik = etiketlenen kişiyi siker \n Sakso = etiketlenen kişiye sakso çektirir``")
     
 @bot.command(pass_context=True)
 async def öp(ctx, member:discord.Member) :
