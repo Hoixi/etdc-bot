@@ -51,7 +51,7 @@ async def dev(ctx) :
     
 @bot.command(pass_context=True)
 async def help(ctx) :
-    await bot.say("``#Duygular \n Öp = etiketlediğiniz kişiyi öper \n Sev = etiketlediğiniz kişiyi sever \n Sarıl = etiketlediğiniz kişiye sarılır \n Sik = etiketlenen kişiyi siker \n Sakso = etiketlenen kişiye sakso çektirir``"
+    await bot.say("``#Duygular \n Öp = etiketlediğiniz kişiyi öper \n Sev = etiketlediğiniz kişiyi sever \n Sarıl = etiketlediğiniz kişiye sarılır \n Sik = etiketlenen kişiyi siker \n Sakso = etiketlenen kişiye sakso çektirir``")
     
 @bot.command(pass_context=True)
 async def öp(ctx, member:discord.Member) :
