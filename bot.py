@@ -288,6 +288,7 @@ async def manat(ctx) :
 
 @bot.command(pass_context=True)
 async def soyle(ctx, *,content) :
+    """Komuttan sonra yazdığınız şeyi bottan yazar"""
     await bot.delete_message(ctx.message)
     await bot.say(content)
 
@@ -304,11 +305,13 @@ async def lol(ctx, msg):
     
 @bot.command(pass_context=True)
 async def kaçcm(ctx):
+    """Kaç cm yarrağınız olduğunu yazar"""
     x = random.randint(1, 40) 
     await bot.say(ctx.message.author.name + "'nin " + str(x) + " cm yarrağı var")
 
 @bot.command(pass_context=True)
 async def waifu(ctx) : 
+    """Rasgele özellikli bir eş yaratır"""
     pers = ["hırslı" , "kibirli" , "garip" , "enerjik" , "nazik", "aceleci","iyi kalpli","melankoli","huysuz","dışına dönük","açık sözlü","şımarık","şakacı","sessiz","asi","ciddi","utangaç","kindar","kaçık"]
     age = ["15" , "16" , "17" , "18" , "19"]
     goz = ["mavi",
@@ -468,6 +471,7 @@ async def waifu(ctx) :
 
 @bot.command(pass_context=True)
 async def husband(ctx) : 
+    """Rasgele özellikli bir eş yaratır"""
     pers = ["hırslı" , "kibirli" , "garip" , "enerjik" , "nazik", "aceleci","iyi kalpli","melankoli","huysuz","dışına dönük","açık sözlü","şımarık","şakacı","sessiz","asi","ciddi","utangaç","kindar","kaçık"]
     age = ["15" , "16" , "17" , "18" , "19"]
     goz = ["mavi",
