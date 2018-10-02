@@ -44,10 +44,15 @@ async def rol(ctx, member:discord.Member):
 @bot.command(pass_context=True)
 async def hadibakim(ctx) :
     await bot.say("Birileri demiş öldü şimdi yazsınlar KRAL geri döndü!")
-
+    
+@bot.command(description='For when you wanna settle the score some other way')
+async def seç(*choices : str):
+    """Komuttan sonra yazdıklarınızdan bir tanesini rasgele seçer."""
+    await bot.say(random.choice(choices))
     
 @bot.command(pass_context=True)
 async def öp(ctx, member:discord.Member) :
+   """Komuttan sonra etiketlediğiniz kişiyi öper"""
    urll = ["http://24.media.tumblr.com/tumblr_m8yxnswMgE1rc0fd6o1_r5_500.gif" , 
    "https://pa1.narvii.com/5823/a1ff3fbec588fdde66dd24293f2220233ce42076_hq.gif" , 
    "https://media1.tenor.com/images/0de1905e4a8b2bb465d04a1f96df7f85/tenor.gif" , 
@@ -88,6 +93,7 @@ async def öp(ctx, member:discord.Member) :
 
 @bot.command(pass_context=True)
 async def sik(ctx, member:discord.Member) :
+   """Komuttan sonra etiketlediğiniz kişiyi siker"""
    urll = ["https://static.hentai-gifs.com/upload/20160703/19/36972/1.gif" , 
    "https://78.media.tumblr.com/931125762652e49075f26f954049c0da/tumblr_msvseafYc01sflbiso1_1280.gif" , 
    "https://www.rencontresanslendemain.net/wp-content/uploads/2018/02/gif-sexe-hentai.gif" , 
@@ -151,6 +157,7 @@ async def sik(ctx, member:discord.Member) :
     
 @bot.command(pass_context=True)
 async def sakso(ctx, member:discord.Member) :
+   """Komuttan sonra etiketlediğiniz kişiye sakso çektirir"""
    urll = ["https://78.media.tumblr.com/95a43cfe1124675948ee753941fe169e/tumblr_o8ufjuFpqI1urpdgno1_540.gif" , 
    "https://78.media.tumblr.com/c20426f84eda26c74e55c737b9257440/tumblr_omav14cUad1vkkt9ro2_500.gif" , 
    "http://68.media.tumblr.com/6f5df52d809ed9c7bd8d1f4c54d6829d/tumblr_njxjq6L4WV1u7ylgco1_400.gif" , 
@@ -176,6 +183,7 @@ async def sakso(ctx, member:discord.Member) :
 
 @bot.command(pass_context=True)
 async def sev(ctx, member:discord.Member) :
+   """Komuttan sonra etiketlediğiniz kişiyi sever"""    
    urll = ["https://media1.tenor.com/images/73a746bada06751716d3173fbb9e6864/tenor.gif" , 
    "https://media1.tenor.com/images/a4a2b1eaa47fd0d8d0951433bc59ab9a/tenor.gif" , 
    "https://media.giphy.com/media/K1InqndmlQDE4/giphy.gif" , 
@@ -188,6 +196,7 @@ async def sev(ctx, member:discord.Member) :
 
 @bot.command(pass_context=True)
 async def sarıl(ctx, member:discord.Member) :
+   """Komuttan sonra etiketlediğiniz kişiye sarılır"""
    urll = ["https://78.media.tumblr.com/2fe074ad467af41a8230b8d9d8e322f1/tumblr_omvj49wYnq1v8tshbo1_500.gif" , 
    "https://media.giphy.com/media/l2QDM9Jnim1YVILXa/giphy.gif" , 
    "https://media1.tenor.com/images/49a21e182fcdfb3e96cc9d9421f8ee3f/tenor.gif" , 
@@ -216,11 +225,13 @@ async def developer(ctx) :
 
 @bot.command(pass_context=True)
 async def ahkmd(ctx, member:discord.Member) :
+   """Komuttan sonra etiketlediğiniz kişinin annesine hükmeder"""
    embed = discord.Embed(title=ctx.message.author.name + " senin anana hükmediyor " + member.name)
    await bot.say(embed = embed)
 
 @bot.command(pass_context=True)
 async def dolar(ctx) :
+    """Dolar kurunu gösterir"""
     url = 'https://www.doviz.com/api/v1/currencies/all/latest'
     r = urllib.request.urlopen(url)
     data = json.loads(r.read().decode(r.info().get_param('charset') or 'utf-8'))
@@ -234,6 +245,7 @@ async def dolar(ctx) :
 
 @bot.command(pass_context=True)
 async def euro(ctx) :
+    """Euro kurunu gösterir"""
     url = 'https://www.doviz.com/api/v1/currencies/all/latest'
     r = urllib.request.urlopen(url)
     data = json.loads(r.read().decode(r.info().get_param('charset') or 'utf-8'))
@@ -248,6 +260,7 @@ async def euro(ctx) :
     
 @bot.command(pass_context=True)
 async def sterlin(ctx) :
+    """Sterlin kurunu gösterir"""
     url = 'https://www.doviz.com/api/v1/currencies/all/latest'
     r = urllib.request.urlopen(url)
     data = json.loads(r.read().decode(r.info().get_param('charset') or 'utf-8'))
@@ -261,6 +274,7 @@ async def sterlin(ctx) :
    
 @bot.command(pass_context=True)
 async def manat(ctx) :
+    """Manat kurunu gösterir"""
     url = 'https://www.doviz.com/api/v1/currencies/all/latest'
     r = urllib.request.urlopen(url)
     data = json.loads(r.read().decode(r.info().get_param('charset') or 'utf-8'))
