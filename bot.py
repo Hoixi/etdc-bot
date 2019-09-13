@@ -627,5 +627,9 @@ async def husband(ctx) :
 
     await bot.say(waifu)
     
-    
+@bot.command(pass_context=True)
+async def deneme(ctx) :
+    await bot.say("->play https://www.youtube.com/watch?v=f4kqIruQcvQ")
+
+
 bot.run(os.environ.get('token'))
