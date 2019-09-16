@@ -8,38 +8,17 @@ import urllib
 from urllib import request
 
 
-level = []
-name = []
 bot = discord.Client()
 bot_prefix="e!"
 bot = commands.Bot(command_prefix=bot_prefix)
 
-@bot.event
-async def on_ready() :
-    print("Bot çevrimiçi!")
-    print("İsim : {}".format(bot.user.name))
-    print("ID : {}".format(bot.user.id))
-    print(str(len(bot.servers)) + " tane serverda çalışıyor!")
-    print(str(len(set(bot.get_all_members()))) + " tane kullanıcaya erişiyor!")
-    await bot.change_presence(game=discord.Game(name=str(len(set(bot.get_all_members()))) + " tane kullanıcaya erişiyor!"))
-    
-def loll (usr: str):
-    global level
-    global name
-    url = 'https://tr1.api.riotgames.com/lol/summoner/v3/summoners/by-name/'+ usr +'?api_key=' + os.environ.get('api')
-    r = urllib.request.urlopen(url)
-    data = json.loads(r.read().decode(r.info().get_param('charset') or 'utf-8'))
-    level = data["summonerLevel"]
-    name = data["name"]
+
     
 
     
-@bot.command(pass_context=True)
-async def rol(ctx, member:discord.Member):
-    await bot.delete_message(ctx.message)
-    role = discord.utils.get(member.server.roles, name='Kurucu💎')
-    role = discord.utils.get(member.server.roles, name='Gamer')
-    await bot.add_roles(member, role)
+
+    
+
 
 @bot.command(pass_context=True)
 async def hadibakim(ctx) :
