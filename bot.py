@@ -3,9 +3,7 @@ import random
 from discord.ext.commands import Bot
 from discord.ext import commands
 import os
-import json
-import urllib
-from urllib import request
+
 
 
 bot = discord.Client()
