@@ -11,7 +11,15 @@ bot_prefix="e!"
 bot = commands.Bot(command_prefix=bot_prefix)
 
 
-    
+@bot.command(pass_context=True)
+async def pri (ctx,number):
+    fs = int(number)
+    chance = ((int(fs) / 2) * 1.180) + ((int(fs) / 2) * 1.170) + 1.180 + 11.76
+    rng = random.uniform(1,100)
+    if(rng <= chance):
+        await bot.say("Tebrikler")
+    else:
+        await bot.say("Başarısız")   
 
     
 
