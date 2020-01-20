@@ -22,8 +22,14 @@ async def pri (ctx,number):
         await bot.say("Başarısız")   
 
     
-
-    
+@bot.command(pass_context=True)
+async def rage(ctx) :
+   urll = ["https://media.giphy.com/media/H90fKQo79caqY/giphy.gif",
+          "https://media1.tenor.com/images/37b3975bc6ca1617409306dd6167f068/tenor.gif?itemid=10119870",
+          "https://media.tenor.com/images/88b219548ba55c6dfbbaf62502f4ba0a/tenor.gif"]
+   embed = discord.Embed(title=ctx.message.author.name + " çok sinirlendi.")
+   embed.set_image(url=random.choice(urll))
+   await bot.say(embed = embed)
 
 
 @bot.command(pass_context=True)
