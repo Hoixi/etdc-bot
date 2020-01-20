@@ -298,7 +298,7 @@ async def kaçcm(ctx):
 async def waifu(ctx) : 
     """Rasgele özellikli bir eş yaratır"""
     pers = ["hırslı" , "kibirli" , "garip" , "enerjik" , "nazik", "aceleci","iyi kalpli","melankoli","huysuz","dışına dönük","açık sözlü","şımarık","şakacı","sessiz","asi","ciddi","utangaç","kindar","kaçık"]
-    age = ["15" , "16" , "17" , "18" , "19" , "20" , "21" " "22" , "23" , "24" , "25" , "26"]
+    age = ["15" , "16" , "17" , "18" , "19" , "20" , "21" , "22" , "23" , "24" , "25" , "26"]
     goz = ["mavi",
 "kahverengi",
 "koyu kahverengi",
