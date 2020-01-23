@@ -12,6 +12,10 @@ bot = discord.Client()
 bot_prefix="e!"
 bot = commands.Bot(command_prefix=bot_prefix)
 
+@bot.command(pass_context=True)
+async def baglan(ctx):
+    channel = ctx.message.author.voice.voice_channel
+    await client.join_voice_channel(channel)
 
 @bot.command(pass_context=True)
 async def oynat(ctx, url):
