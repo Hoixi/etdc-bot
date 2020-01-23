@@ -12,6 +12,8 @@ bot = discord.Client()
 bot_prefix="e!"
 bot = commands.Bot(command_prefix=bot_prefix)
 
+players = {}
+
 @bot.command(pass_context=True)
 async def baglan(ctx):
     channel = ctx.message.author.voice.voice_channel
