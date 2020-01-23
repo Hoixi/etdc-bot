@@ -3,6 +3,8 @@ import random
 from discord.ext.commands import Bot
 from discord.ext import commands
 import os
+import youtube_dl
+
 
 
 
@@ -10,6 +12,14 @@ bot = discord.Client()
 bot_prefix="e!"
 bot = commands.Bot(command_prefix=bot_prefix)
 
+
+@bot.command(pass_context=True)
+async def oynat(ctx, url):
+    server = ctx.message.server
+    voice_client = bot.voice_client_in(server)
+    player = await voice_client.create_ytdl_player(url)
+    players[server.id] = player
+    player.start() 
 
 @bot.command(pass_context=True)
 async def pri (ctx,number):
