@@ -3,7 +3,6 @@ import random
 from discord.ext.commands import Bot
 from discord.ext import commands
 import os
-import youtube_dl
 
 
 
@@ -13,11 +12,6 @@ bot_prefix="e!"
 bot = commands.Bot(command_prefix=bot_prefix)
 
 
-
-@bot.command(pass_context=True)
-async def baglan(ctx):
-    channel = ctx.message.author.voice.voice_channel
-    await bot.join_voice_channel(channel)
 
 
 @bot.command(pass_context=True)
