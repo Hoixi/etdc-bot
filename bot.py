@@ -300,12 +300,8 @@ async def lol(ctx, msg):
 @bot.command(pass_context=True)
 async def kaçcm(ctx):
     """Kaç cm yarrağınız olduğunu yazar"""
-    
-    if member.name == "Hoixi" :
-      await bot.say(ctx.message.author.name + "'nin " + "40" + " cm yarrağı var")
-    else : 
-      x = random.randint(1, 40) 
-      await bot.say(ctx.message.author.name + "'nin " + str(x) + " cm yarrağı var")
+    x = random.randint(1, 40) 
+    await bot.say(ctx.message.author.name + "'nin " + str(x) + " cm yarrağı var")
 
 @bot.command(pass_context=True)
 async def waifu(ctx) : 
